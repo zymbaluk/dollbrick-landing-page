@@ -88,6 +88,7 @@ const shows = [
         title: "IMPROV SHOW: Fifth Date Vibes",
         description: "Celebrate Valentine's week with some improv fun! Join Dollbrick, They Might Be Ghosts, and Just Happy to Be Here for a night of laughs and good vibes at Vermillion!",
         date: getDate(2026, 'Feb', 11, 7, 0, 'PM'),
+        image: './assets/images/fifth-date-vibes-02112026.png',
         tickets: 'https://www.instagram.com/p/DUCFjVaDpKf/?igsh=enh5amNwZzhuNTlo'
     },
     {
