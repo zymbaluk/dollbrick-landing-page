@@ -84,6 +84,14 @@ const shows = [
     },
     {
         ...vermillion,
+        id: 'vermillion-20260211',
+        title: "IMPROV SHOW: Fifth Date Vibes",
+        description: "Get ready for Valentine's Day with some improv fun! Join Dollbrick, They Might Be Ghosts, and Just Happy to Be Here for a night of laughs and good vibes at Vermillion!",
+        date: getDate(2026, 'Feb', 11, 7, 0, 'PM'),
+        tickets: 'https://www.instagram.com/p/DUCFjVaDpKf/?igsh=enh5amNwZzhuNTlo'
+    },
+    {
+        ...vermillion,
         id: 'vermillion-20260222',
         description: "FREE SHOW! Come see Late for Work Improv and Dollbrick perform improv at Vermillion - it's gonna be a night of laughs and good vibes!",
         date: getDate(2026, 'Feb', 22, 7, 0, 'PM'),
