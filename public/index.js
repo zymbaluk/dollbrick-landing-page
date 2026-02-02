@@ -54,6 +54,13 @@ const ShowCard = ({ show, ticketLinkRef = null, altText = "testAlt" }) => {
   const now = new Date();
   const isPast = show.date <= now;
 
+  const renderFooter = () => {
+    if (show.noTickets) {
+      return html`<span className="no-tickets-message">no tickets, just show up!</span>`;
+    }
+    return html`<a ref=${ticketLinkRef} disabled=${!show.tickets} href=${show.tickets} onClick=${(e) => e.stopPropagation()}>${!show.tickets ? 'Tickets on sale soon!' : 'Tickets'}</a>`;
+  };
+
   return html`
     <${Card} className="show">
       <${ImageHeader} className="show-image" alt=${altText} imageSrc="${show.image ?? './assets/images/hero-image.png'}" />
@@ -65,7 +72,7 @@ const ShowCard = ({ show, ticketLinkRef = null, altText = "testAlt" }) => {
       </${CardBody}>
       ${!isPast && html`
         <${CardFooter}>
-          <a ref=${ticketLinkRef} disabled=${!show.tickets} href=${show.tickets} onClick=${(e) => e.stopPropagation()}>${!show.tickets ? 'Tickets on sale soon!' : 'Tickets'}</a>
+          ${renderFooter()}
         </${CardFooter}>
       `}
     </${Card}>

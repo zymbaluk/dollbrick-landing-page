@@ -27,6 +27,7 @@ function getDate(year, month, day, hour, minute, ampm) {
  * @property {string} [image] - The image to display for the show.
  * @property {boolean} jetCity - Whether the show is in collaboration with Jet City Improv.
  * @property {string} [tickets] - The URL to purchase tickets.
+ * @property {boolean} [noTickets] - When true, displays "no tickets, just show up!" instead of a ticket link.
  */
 
 const spoonsIn = {
@@ -89,7 +90,7 @@ const shows = [
         description: "Celebrate Valentine's week with some improv fun! Join Dollbrick, They Might Be Ghosts, and Just Happy to Be Here for a night of laughs and good vibes at Vermillion!",
         date: getDate(2026, 'Feb', 11, 7, 0, 'PM'),
         image: './assets/images/fifth-date-vibes-02112026.png',
-        tickets: 'https://www.instagram.com/p/DUCFjVaDpKf/?igsh=enh5amNwZzhuNTlo'
+        noTickets: true
     },
     {
         ...vermillion,
