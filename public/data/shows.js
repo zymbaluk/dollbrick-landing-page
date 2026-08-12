@@ -108,6 +108,14 @@ const shows = [
         image: './assets/images/vermillion-fka-04122026.jpg',
         tickets: 'https://www.eventbrite.com/e/improv-vermillion-featuring-formerly-known-as-dollbrick-tickets-1986592557818'
     },
+    {
+        ...vermillion,
+        id: 'vermillion-20260823',
+        description: "FREE SHOW! Come see My Two Wives and Dollbrick perform improv at Vermillion - it's gonna be a night of laughs and good vibes!",
+        date: getDate(2026, 'Aug', 23, 7, 0, 'PM'),
+        image: './assets/images/vermillion-mtw-08232026.jpg',
+        tickets: 'https://www.eventbrite.com/e/improv-vermillion-dollbrick-my-two-wives-tickets-1996477392625'
+    },
     // Past
     {
         id: 'forced-perspective-20250926',
