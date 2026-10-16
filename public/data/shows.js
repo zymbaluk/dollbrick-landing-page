@@ -116,6 +116,14 @@ const shows = [
         image: './assets/images/vermillion-mtw-08232026.jpg',
         tickets: 'https://www.eventbrite.com/e/improv-vermillion-dollbrick-my-two-wives-tickets-1996477392625'
     },
+    {
+        ...vermillion,
+        id: 'vermillion-20261025',
+        description: "FREE SHOW! Come see Lee & Nathan and Dollbrick perform improv at Vermillion - it's gonna be a night of laughs and good vibes!",
+        date: getDate(2026, 'Oct', 25, 7, 0, 'PM'),
+        image: './assets/images/IMG_0763.jpg',
+        tickets: 'https://www.eventbrite.com/e/improv-vermillion-dollbrick-and-lee-nathan-tickets-2003216193560'
+    },
     // Past
     {
         id: 'forced-perspective-20250926',
